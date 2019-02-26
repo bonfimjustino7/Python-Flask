@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Clientes</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Cadastrar de Clientes</h1>
+	<hr>
+	<form action="{{ url_for('cadastro')}}" method="POST">
+		<table>
+			<tr>
+				<td>Nome: </td>
+				<td><input type="text" name="nome"></td>
+			</tr>
+			<tr>
+				<td>Telefone: </td>
+				<td><input type="text" name="telefone"></td>
+			</tr>
+			<tr>
+				<td>CPF: </td>
+				<td><input type="text" name="cpf"></td>
+			</tr>
+			<tr>
+				<td>Email: </td>
+				<td><input type="email" name="email"></td>
+			</tr>
+		</table><br>
+		<input type="submit" value="Cadastrar">
+	</form>
+</body>
+</html>
